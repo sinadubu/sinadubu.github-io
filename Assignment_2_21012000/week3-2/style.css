@@ -1,0 +1,149 @@
+body {
+	font-family: 'Noto Sans', sans-serif;
+	background: #000000;
+	color: #ffffff;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Roboto Mono', monospace;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0),rgba(234, 65, 65, 0.8),rgba(0, 0, 0, 0));
+}
+
+.container {
+	max-width: 840px;
+	margin: 0 auto;
+}
+
+.profile-picture{
+    width: 200px;
+    height: 200px;
+    border-radius: 40%;
+    box-shadow: 0 10px 6px 0 rgba(34,60,80,.75);
+    transition: all ease-in-out 2s;
+}
+.profile-picture:hover{
+    box-shadow: 0 8px 12px 0 rgba(241,122,3,.75);
+}
+
+.container > div {
+	margin: 20px auto;
+}
+
+.intro {
+    text-align: center;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+@media (max-width: 480px) { 
+    .about-grid {
+    grid-template-columns: 100%; 
+    }
+}
+
+.i-am, .i-like {
+    text-align: center;
+    text-decoration: none
+}
+
+.about-list {
+    list-style: none;
+    padding: 0;
+}
+
+.projects-heading {
+    text-align: center; 
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+@media (max-width: 650px) { 
+    .projects-grid {
+    grid-template-columns: 100%; 
+    }
+}
+
+.project-image {
+    justify-self: center;
+    padding: 4%;
+    width: 300px;
+    height: 300px;
+    border-radius: 30%;
+    box-shadow: 0 4px 6px 0 rgba(34,60,80,.75);
+    transition: all ease-in-out 1s;
+}
+.project-image:hover{
+    filter: brightness(0.2);
+    box-shadow: 0 8px 12px 0 rgba(241,122,3,.75);
+}
+.project-image-wrapper{
+    justify-self: center;
+    padding: 4%;
+    position: relative;
+}
+.project-image-wrapper:hover > h4 {
+    visibility: visible;
+}
+.project-image-wrapper > h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    visibility: hidden;
+    z-index: 2;
+    transition: all ease-in-out 2s;
+}
+
+.links-and-contact {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+@media (max-width: 650px) {
+    .links-and-contact { 
+    grid-template-columns: 100%;
+    } 
+}
+
+.links {
+    justify-self: center;
+}
+
+.links-list {
+    list-style: none;
+    padding: 0;
+}
+
+form input, textarea {
+	padding: 5px;
+	border-radius: 5px;
+	width: 240px;
+}
+
+form {
+	width: 250px;
+	margin: 0 auto;
+}
+
+form input[type="submit"] {
+	width: 250px;
+}
+
+.submit-button-wrapper {
+	margin: 20px 0;
+    background-color: rgb(238, 127, 113);
+    color: black;
+}
+
+.map{
+    text-align: center;
+}
